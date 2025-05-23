@@ -1,12 +1,57 @@
-# React + Vite
+# Product Catalog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple product catalog web application built with **React**, **Vite**, and **React Router**.  
+It fetches products from [Fake Store API](https://fakestoreapi.com/) and displays them in a responsive grid.  
+Clicking a product shows detailed information.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Product listing with images, price, and category
+- Product detail page with description and category
+- Responsive design
+- Loading and error handling
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+2. **Run the development server:**
+   ```sh
+   npm run dev
+   ```
+
+3. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Scripts
+
+- `npm run dev` — Start development server
+- `npm run build` — Build for production
+- `npm run preview` — Preview production build
+- `npm run lint` — Run ESLint
+
+## Project Structure
+
+```
+src/
+  components/
+    Loader.jsx
+    ProductCard.jsx
+  pages/
+    ProductList.jsx
+    ProductDetail.jsx
+  App.jsx
+  main.jsx
+  index.css
+  App.css
+```
+
+## API
+
+- [Fake Store API](https://fakestoreapi.com/)
+
+---
+
+Built with [Vite](https://vitejs.dev/) and [React](https://react.dev/).
